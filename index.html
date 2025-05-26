@@ -1,23 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMK TI Bali Global Denpasar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0d47a1', 
+            secondary: '#ffffff', 
+            accent: '#d32f2f'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-secondary text-gray-900">
+
+
+<!-- Navbar -->
+<nav class="bg-secondary shadow-md px-6 py-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <img src="logo smk ti.png" alt="Logo" class="w-12 h-12" />
+    <div>
+      <h1 class="text-lg font-bold text-primary">SMK TI BALI GLOBAL DENPASAR</h1>
+      <p class="text-sm text-gray-500">Jl. Tukad Citarum No. 44 Denpasar, Bali</p>
+    </div>
+  </div>
+  <ul class="flex gap-6 text-sm font-medium">
+    <li><a href="index.html" class="hover:text-primary">HOME</a></li>
+    <li><a href="profile.html" class="hover:text-primary">PROFILE</a></li>
+    <li><a href="jurusan.html" class="hover:text-primary">JURUSAN</a></li>
+    <li><a href="pengumuman.html" class="hover:text-primary">PENGUMUMAN</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <!-- Left (Text) -->
+      <div class="md:w-1/2 text-left">
+        <h2 class="text-4xl font-bold tracking-wide">SMK TI BALI GLOBAL DENPASAR</h2>
+        <p class="text-lg italic mt-2">"Wiyata Prapti Waratmaja"</p>
+      </div>
+      <!-- Right (Image) -->
+      <div class="md:w-1/2">
+        <img src="gedung.jpg" alt="Foto Sekolah" class="rounded-lg shadow-lg w-full max-h-96 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PPDB Button -->
+  <section class="my-10 flex justify-center">
+    <button class="bg-gray-200 shadow-lg px-8 py-4 rounded-md text-xl font-semibold text-primary relative">
+      PENDAFTARAN PPDB
+      <span class="absolute top-0 right-0 w-5 h-5 bg-gradient-to-br from-red-500 to-pink-500 rounded-full"></span>
+    </button>
+  </section>
+
+  <!-- Icons Section -->
+  <section class="flex justify-center gap-6 mb-10">
+    <div class="bg-primary text-white p-4 rounded-full text-center w-16 h-16 flex items-center justify-center text-xs">RPL</div>
+    <div class="bg-primary text-white p-4 rounded-full text-center w-16 h-16 flex items-center justify-center text-xs">TKJ</div>
+    <div class="bg-primary text-white p-4 rounded-full text-center w-16 h-16 flex items-center justify-center text-xs">DKV</div>
+    <div class="bg-primary text-white p-4 rounded-full text-center w-16 h-16 flex items-center justify-center text-xs">ANIMASI</div>
+  </section>
+
+  <!-- Welcome Text -->
+  <section class="bg-primary text-white px-6 py-10 rounded-md max-w-3xl mx-auto mb-12">
+    <h3 class="text-2xl font-bold mb-4">WELCOME TO SMK TI BALI GLOBAL</h3>
+    <p class="text-base">Kami sangat senang dan bahagia menyambut Anda di halaman web resmi sekolah kami. Di sini, Anda akan menemukan informasi terkini seputar kegiatan sekolah, prestasi siswa, dan berbagai program pendidikan yang kami tawarkan.</p>
+  </section>
+</body>
 </html>

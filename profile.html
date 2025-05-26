@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMK TI Bali Global Denpasar</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0d47a1', // Biru tua
+            secondary: '#ffffff', // Putih
+            accent: '#d32f2f'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-secondary text-gray-900">
+
+<!-- Navbar -->
+<nav class="bg-secondary shadow-md px-6 py-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <img src="logo smk ti.png" alt="Logo" class="w-12 h-12" />
+    <div>
+      <h1 class="text-lg font-bold text-primary">SMK TI BALI GLOBAL DENPASAR</h1>
+      <p class="text-sm text-gray-500">Jl. Tukad Citarum No. 44 Denpasar, Bali</p>
+    </div>
+  </div>
+  <ul class="flex gap-6 text-sm font-medium">
+    <li><a href="index.html" class="hover:text-primary">HOME</a></li>
+    <li><a href="profile.html" class="hover:text-primary">PROFILE</a></li>
+    <li><a href="jurusan.html" class="hover:text-primary">JURUSAN</a></li>
+    <li><a href="pengumuman.html" class="hover:text-primary">PENGUMUMAN</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section Full Height -->
+  <section class="bg-primary text-white min-h-screen flex flex-col justify-center items-center px-4 py-10">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Profile Sekolah</h2>
+    <img src="profile.png" alt="Foto Sekolah" class="rounded-lg shadow-lg w-full max-w-4xl object-cover" />
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurusan - SMK TI Bali Global Denpasar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0d47a1',
+            secondary: '#ffffff',
+            accent: '#d32f2f'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-primary text-white">
+
+<!-- Navbar -->
+<nav class="bg-secondary shadow-md px-6 py-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <img src="logo smk ti.png" alt="Logo" class="w-12 h-12" />
+    <div>
+      <h1 class="text-lg font-bold text-primary">SMK TI BALI GLOBAL DENPASAR</h1>
+      <p class="text-sm text-gray-500">Jl. Tukad Citarum No. 44 Denpasar, Bali</p>
+    </div>
+  </div>
+  <ul class="flex gap-6 text-sm font-medium">
+    <li><a href="index.html" class="hover:text-primary">HOME</a></li>
+    <li><a href="profile.html" class="hover:text-primary">PROFILE</a></li>
+    <li><a href="jurusan.html" class="text-primary font-bold">JURUSAN</a></li>
+    <li><a href="pengumuman.html" class="hover:text-primary">PENGUMUMAN</a></li>
+  </ul>
+</nav>
+
+<!-- Title -->
+<header class="bg-white text-center py-10 rounded-b-3xl shadow">
+  <h2 class="text-4xl font-bold text-primary">Pilihan Jurusan</h2>
+  <p class="mt-2 text-gray-600 italic">Program keahlian unggulan SMK TI Bali Global Denpasar</p>
+</header>
+
+<!-- Jurusan Grid -->
+<section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+  
+  <!-- RPL -->
+  <div class="bg-white rounded-xl shadow p-4 text-center text-gray-900">
+    <img src="rpl.jpg" alt="RPL" class="w-full h-64 object-cover rounded-lg mb-4">
+    <h3 class="text-xl font-semibold text-primary mb-2">Rekayasa Perangkat Lunak (RPL)</h3>
+    <p class="text-sm text-gray-600">Fokus pada pemrograman, pengembangan aplikasi web, mobile, dan software berbasis database.</p>
+  </div>
+
+  <!-- TKJ -->
+  <div class="bg-white rounded-xl shadow p-4 text-center text-gray-900">
+    <img src="tkj.jpg" alt="TKJ" class="w-full h-64 object-cover rounded-lg mb-4">
+    <h3 class="text-xl font-semibold text-primary mb-2">Teknik Komputer dan Jaringan (TKJ)</h3>
+    <p class="text-sm text-gray-600">Mempelajari instalasi, perawatan jaringan, sistem operasi server & client, serta keamanan jaringan.</p>
+  </div>
+
+  <!-- Animasi -->
+  <div class="bg-white rounded-xl shadow p-4 text-center text-gray-900">
+    <img src="animasi.jpg" alt="Animasi" class="w-full h-64 object-cover rounded-lg mb-4">
+    <h3 class="text-xl font-semibold text-primary mb-2">Animasi</h3>
+    <p class="text-sm text-gray-600">Mengembangkan skill dalam menggambar, membuat animasi 2D dan 3D, serta efek visual dan media interaktif.</p>
+  </div>
+
+  <!-- DKV -->
+  <div class="bg-white rounded-xl shadow p-4 text-center text-gray-900">
+    <img src="dkv.jpg" alt="DKV" class="w-full h-64 object-cover rounded-lg mb-4">
+    <h3 class="text-xl font-semibold text-primary mb-2">Desain Komunikasi Visual (DKV)</h3>
+    <p class="text-sm text-gray-600">Belajar desain grafis, ilustrasi, branding, media promosi, dan desain digital modern.</p>
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary text-gray-700 text-center py-6">
+  <p class="text-sm">&copy; 2025 SMK TI Bali Global Denpasar. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
